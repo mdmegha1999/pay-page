@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div> </div>
+  <form>
+    <span style="font-size: 30px;">Payment Page</span>
+    <li>Account no-<input type="text" id="acc" required /><br></li>
+    <li>Confirm Account no-<input type="text" id="can" required /><br>
+    </li>
+    <span id="error-msg"></span>
+
+    <li>Available Balance :<input id="avlBal" value="5000"></li>
+    <li>amount to be debited-<input type="text" id="atbd" required /><br></li>
+    <span id="balance-error"></span>
+    <li>ifsc code-<input type="text" id="ifsc" required /><br></li>
+    <li>Payment channal-<input type="text" id="pc" required /><br></li>
+    <!--We can use Below method to check number length-->
+    <li>Mobile no-<input type="text" maxlength="10" id="mn" required /><br></li>
+    <!--minlength="10" maxlength="10"-->
+    <span id="mobile-error"></span>
+    <li><button id="but">Process to Payment</button><br></li>
+  </form>
+
+</body>
+<script src="pay.js"></script>
+</html>
